@@ -1,0 +1,17 @@
+# Локальная база данных
+smart_home.db
+smart_home.db-journal
+smart_home.db-shm
+smart_home.db-wal
+
+# Виртуальное окружение и кэш Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+
+# Настройки редакторов
+.idea/
+.vscode/
