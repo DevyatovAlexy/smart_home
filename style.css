@@ -1,0 +1,152 @@
+:root {
+  font-family:
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    sans-serif;
+  color: #172b34;
+  background: #f3f6f7;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+main {
+  max-width: 1060px;
+  margin: auto;
+  padding: 32px 22px 70px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 26px;
+}
+h1 {
+  font-size: 2rem;
+  margin: 0 0 5px;
+}
+h2 {
+  font-size: 1.15rem;
+  margin: 0 0 16px;
+}
+p {
+  margin: 0;
+  color: #52636a;
+}
+.section-description {
+  margin-bottom: 16px;
+}
+.rule-description {
+  margin-top: 12px;
+}
+.tag {
+  background: #dcefe9;
+  color: #126451;
+  border-radius: 20px;
+  padding: 8px 14px;
+  font-weight: 700;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+section {
+  background: white;
+  border: 1px solid #e3eaec;
+  border-radius: 15px;
+  padding: 22px;
+  box-shadow: 0 4px 18px #19313b0a;
+}
+.wide {
+  grid-column: 1/-1;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid #e8eeee;
+}
+.row:last-child {
+  border: 0;
+}
+.name {
+  font-weight: 650;
+}
+.sub {
+  display: block;
+  color: #6b7d83;
+  font-size: 0.85rem;
+  margin-top: 4px;
+}
+button {
+  border: 1px solid #b7cbd1;
+  background: #fff;
+  border-radius: 9px;
+  padding: 8px 14px;
+  font: inherit;
+  cursor: pointer;
+  color: #17323b;
+}
+button:hover {
+  background: #edf7f4;
+}
+button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+button.active {
+  background: #13745f;
+  color: white;
+  border-color: #13745f;
+}
+.buttons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+input[type="number"] {
+  width: 86px;
+  padding: 8px;
+  border: 1px solid #b7cbd1;
+  border-radius: 8px;
+  font: inherit;
+}
+.danger {
+  color: #b43838;
+}
+ul {
+  padding-left: 20px;
+  margin: 0;
+  max-height: 235px;
+  overflow: auto;
+}
+li {
+  margin: 9px 0;
+  line-height: 1.35;
+}
+small {
+  color: #6b7d83;
+}
+#notice {
+  min-height: 22px;
+  margin: 0 0 16px;
+  color: #a23636;
+}
+@media (max-width: 700px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  main {
+    padding: 24px 14px;
+  }
+  h1 {
+    font-size: 1.6rem;
+  }
+}
